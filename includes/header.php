@@ -29,7 +29,9 @@ $description = $descriptions[$page] ?? 'Construction & Rénovation – Baldonedo
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= str_contains($_SERVER['PHP_SELF'], '/pages/') || str_contains($_SERVER['PHP_SELF'], 'realisations') ? '../' : '' ?>assets/css/style.css">
-    <link rel="icon" type="image/svg+xml" href="<?= str_contains($_SERVER['PHP_SELF'], '/pages/') || str_contains($_SERVER['PHP_SELF'], 'realisations') ? '../' : '' ?>assets/images/favicon.svg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?= str_contains($_SERVER['PHP_SELF'], '/pages/') || str_contains($_SERVER['PHP_SELF'], 'realisations') ? '../' : '' ?>assets/images/logo-baldonedo-batiment.png">
+    <!-- <link rel="icon" type="image/svg+xml" href="<?= str_contains($_SERVER['PHP_SELF'], '/pages/') || str_contains($_SERVER['PHP_SELF'], 'realisations') ? '../' : '' ?>assets/images/favicon.svg"> -->
 </head>
 <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>

@@ -244,7 +244,7 @@ input, textarea, select { font-family: inherit; }
     align-items: center;
     justify-content: space-between;
     gap: var(--sp-4);
-    min-height: 70px;
+    height: 4.25rem;
 }
 
 /* Logo */
@@ -280,6 +280,25 @@ input, textarea, select { font-family: inherit; }
 }
 .logo--footer .logo-name { color: var(--clr-white); }
 .logo--footer .logo-sub  { color: var(--clr-primary-light); }
+
+.logo-img {
+    height: 3.25rem;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.footer-certs {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+.footer-certs img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    opacity: 0.75;
+}
 
 /* Hamburger */
 .nav-toggle {

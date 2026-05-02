@@ -10,19 +10,8 @@ $nav_links = [
 ?>
 <header class="site-header" role="banner">
     <div class="container header-inner">
-        <a href="<?= $base ?>index.php" class="logo" aria-label="Baldonedo Bâtiment – Accueil">
-            <span class="logo-icon" aria-hidden="true">
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <polygon points="18,3 33,30 3,30" fill="#5aaec0" opacity="0.9"/>
-                    <rect x="13" y="20" width="10" height="10" fill="#3d90a1"/>
-                    <rect x="15" y="22" width="3" height="4" fill="white" opacity="0.8"/>
-                    <rect x="19" y="22" width="3" height="4" fill="white" opacity="0.8"/>
-                </svg>
-            </span>
-            <span class="logo-text">
-                <span class="logo-name">Baldonedo</span>
-                <span class="logo-sub">Bâtiment</span>
-            </span>
+        <a href="<?= $base ?>index.php" class="logo" aria-label="Baldonedo Bâtiment — Accueil">
+            <img src="<?= $base ?>assets/images/logo-baldonedo-batiment.png" alt="Baldonedo Nettoyage" class="logo-img">
         </a>
 
         <button class="nav-toggle" id="navToggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Ouvrir le menu">

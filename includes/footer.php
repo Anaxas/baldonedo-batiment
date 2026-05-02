@@ -4,18 +4,14 @@
         <div class="container footer-grid">
 
             <div class="footer-col footer-brand">
-                <a href="<?= (str_contains($_SERVER['PHP_SELF'], '/pages/') || basename($_SERVER['PHP_SELF'], '.php') === 'realisations') ? '../' : '' ?>index.php" class="logo logo--footer" aria-label="Baldonedo Bâtiment – Accueil">
-                    <svg width="30" height="30" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <polygon points="18,3 33,30 3,30" fill="#5aaec0" opacity="0.9"/>
-                        <rect x="13" y="20" width="10" height="10" fill="#3d90a1"/>
-                        <rect x="15" y="22" width="3" height="4" fill="white" opacity="0.6"/>
-                        <rect x="19" y="22" width="3" height="4" fill="white" opacity="0.6"/>
-                    </svg>
-                    <span class="logo-text">
-                        <span class="logo-name">Baldonedo</span>
-                        <span class="logo-sub">Bâtiment</span>
-                    </span>
+                <a href="<?= $base ?>index.php" class="logo" aria-label="Baldonedo Nettoyage">
+                    <img src="<?= $base ?>assets/images/logo-baldonedo-batiment.png" alt="Baldonedo Nettoyage" class="logo-img logo-img--footer">
                 </a>
+                <p class="footer-tagline">Propreté professionnelle, confiance durable.</p>
+                <div class="footer-certs">
+                    <img src="<?= $base ?>assets/images/fep.png" alt="Membre FEP" title="Fédération des Entreprises de Propreté">
+                    <img src="<?= $base ?>assets/images/ecolabel.png" alt="Éco-label européen" title="Produits éco-labellisés">
+                </div>
                 <p class="footer-tagline">Votre expert en construction et rénovation en Île-de-France depuis des années.</p>
             </div>
 
