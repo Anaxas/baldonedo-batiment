@@ -18,9 +18,11 @@
             <div class="footer-col">
                 <h3 class="footer-heading">Navigation</h3>
                 <ul class="footer-links">
-                    <li><a href="<?= (str_contains($_SERVER['PHP_SELF'], '/pages/') || basename($_SERVER['PHP_SELF'], '.php') === 'realisations') ? '../' : '' ?>index.php">Accueil</a></li>
-                    <li><a href="<?= (str_contains($_SERVER['PHP_SELF'], '/pages/') || basename($_SERVER['PHP_SELF'], '.php') === 'realisations') ? '../' : '' ?>realisations.php">Réalisations</a></li>
-                    <li><a href="<?= (str_contains($_SERVER['PHP_SELF'], '/pages/') || basename($_SERVER['PHP_SELF'], '.php') === 'realisations') ? '../' : '' ?>pages/contact.php">Contact</a></li>
+                    <?php $fp = (str_contains($_SERVER['PHP_SELF'], '/pages/') || basename($_SERVER['PHP_SELF'], '.php') === 'realisations') ? '../' : ''; ?>
+                    <li><a href="<?= $fp ?>index.php">Accueil</a></li>
+                    <li><a href="<?= $fp ?>pages/services.php">Services</a></li>
+                    <li><a href="<?= $fp ?>realisations.php">Réalisations</a></li>
+                    <li><a href="<?= $fp ?>pages/contact.php">Contact</a></li>
                 </ul>
             </div>
 

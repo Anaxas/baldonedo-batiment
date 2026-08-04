@@ -4,6 +4,7 @@
     <section class="hero" aria-label="Bienvenue chez Baldonedo Bâtiment">
         <div class="hero-bg" role="img" aria-label="Chantier de construction"></div>
         <div class="container">
+            <div class="hero-inner">
             <div class="hero-content">
                 <p class="hero-eyebrow">Construction &amp; Rénovation – Orly, Île-de-France</p>
                 <h1 class="hero-title">
@@ -38,6 +39,13 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Hero image -->
+            <div class="page-hero-img-wrap" style="position:relative;z-index:1;">
+                <img src="assets/images/team.jpg" alt="L'équipe Baldonedo Bâtiment" class="page-hero-img" loading="eager">
+            </div>
+
+            </div><!-- /.hero-inner -->
         </div>
     </section>
 
@@ -49,104 +57,146 @@
                 <h2 class="section-title" id="services-title">Nos Services</h2>
                 <div class="divider divider--center"></div>
                 <p class="section-subtitle">
-                    De la construction neuve à la rénovation complète, nous prenons en charge chaque étape de votre projet avec expertise et professionnalisme.
+                    Rénovation, électricité, plomberie, revêtements de sol, plâtrerie et aménagement intérieur — des artisans qualifiés pour chaque corps de métier.
                 </p>
             </div>
 
             <div class="services-grid">
-                <!-- Construction -->
-                <article class="service-card fade-in" aria-labelledby="svc-construction">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                            <rect x="2" y="7" width="20" height="14" rx="1"/>
-                            <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
-                            <line x1="12" y1="12" x2="12" y2="16"/>
-                            <line x1="10" y1="14" x2="14" y2="14"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title" id="svc-construction">Construction Neuve</h3>
-                    <p class="service-desc">
-                        Réalisation de maisons individuelles, immeubles et bâtiments commerciaux. Nous gérons votre projet du terrassement à la livraison clés en main.
-                    </p>
-                </article>
-
                 <!-- Rénovation -->
-                <article class="service-card fade-in fade-in-delay-1" aria-labelledby="svc-renovation">
+                <a href="pages/services.php#renovation" class="service-card fade-in" aria-labelledby="svc-home-renovation">
                     <div class="service-icon" aria-hidden="true">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
                             <path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/>
                         </svg>
                     </div>
-                    <h3 class="service-title" id="svc-renovation">Rénovation Complète</h3>
+                    <h3 class="service-title" id="svc-home-renovation">Rénovation</h3>
                     <p class="service-desc">
-                        Transformation et réhabilitation de logements, locaux professionnels et espaces commerciaux. Modernisation, mise aux normes et optimisation des espaces.
+                        Réhabilitation complète ou partielle de logements et locaux professionnels. Mise aux normes, isolation thermique et finitions soignées.
                     </p>
-                </article>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
 
-                <!-- Extension -->
-                <article class="service-card fade-in fade-in-delay-2" aria-labelledby="svc-extension">
+                <!-- Peinture -->
+                <a href="pages/services.php#peinture" class="service-card fade-in fade-in-delay-1" aria-labelledby="svc-home-peinture">
                     <div class="service-icon" aria-hidden="true">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                            <polyline points="15 3 21 3 21 9"/>
-                            <polyline points="9 21 3 21 3 15"/>
-                            <line x1="21" y1="3" x2="14" y2="10"/>
-                            <line x1="3" y1="21" x2="10" y2="14"/>
+                            <rect x="2" y="2" width="14" height="7" rx="2"/>
+                            <path d="M9 9v5"/>
+                            <rect x="6" y="14" width="6" height="5" rx="1"/>
+                            <path d="M18 6h2a2 2 0 012 2v8a2 2 0 01-2 2h-2"/>
                         </svg>
                     </div>
-                    <h3 class="service-title" id="svc-extension">Extension &amp; Agrandissement</h3>
+                    <h3 class="service-title" id="svc-home-peinture">Peinture</h3>
                     <p class="service-desc">
-                        Surélévation, extension latérale ou aménagement de combles. Augmentez la surface habitable de votre bien tout en respectant les contraintes architecturales.
+                        Peinture intérieure et extérieure, ravalement de façade et finitions décoratives. Des surfaces soignées, durables et dans les tons de votre choix.
                     </p>
-                </article>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+
+                <!-- Isolation extérieure -->
+                <a href="pages/services.php#isolation" class="service-card fade-in fade-in-delay-2" aria-labelledby="svc-home-isolation">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                            <path d="M5 12c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0" stroke-linecap="round"/>
+                            <path d="M5 16c1.5-1.5 3-1.5 4.5 0s3 1.5 4.5 0 3-1.5 4.5 0" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" id="svc-home-isolation">Isolation extérieure</h3>
+                    <p class="service-desc">
+                        Isolation thermique par l'extérieur (ITE) avec enduit ou bardage. Réduisez vos factures d'énergie et améliorez votre DPE.
+                    </p>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+
+                <!-- Électricité -->
+                <a href="pages/services.php#electricite" class="service-card fade-in fade-in-delay-1" aria-labelledby="svc-home-electricite">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" id="svc-home-electricite">Électricité</h3>
+                    <p class="service-desc">
+                        Installations électriques neuves et rénovées, conformes NF C 15-100. Tableau, câblage, éclairage, domotique et mise aux normes.
+                    </p>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+
+                <!-- Plomberie -->
+                <a href="pages/services.php#plomberie" class="service-card fade-in fade-in-delay-2" aria-labelledby="svc-home-plomberie">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                            <path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" id="svc-home-plomberie">Plomberie</h3>
+                    <p class="service-desc">
+                        Pose de sanitaires, réseaux d'alimentation et d'évacuation. Chauffe-eau, chaudière, pompe à chaleur et détection de fuites.
+                    </p>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+
+                <!-- Revêtements de sol -->
+                <a href="pages/services.php#revetements" class="service-card fade-in" aria-labelledby="svc-home-revetements">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" id="svc-home-revetements">Revêtements de sol</h3>
+                    <p class="service-desc">
+                        Carrelage, parquet, vinyle et béton ciré. Préparation des supports et pose soignée, en neuf comme en rénovation.
+                    </p>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+
+                <!-- Plâtrerie -->
+                <a href="pages/services.php#platrerie" class="service-card fade-in fade-in-delay-1" aria-labelledby="svc-home-platrerie">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="2" y1="10" x2="22" y2="10"/>
+                            <line x1="12" y1="3" x2="12" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title" id="svc-home-platrerie">Plâtrerie</h3>
+                    <p class="service-desc">
+                        Cloisons, doublages, plafonds suspendus et enduits. La base indispensable de toute finition intérieure réussie.
+                    </p>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
 
                 <!-- Aménagement intérieur -->
-                <article class="service-card fade-in" aria-labelledby="svc-amenagement">
+                <a href="pages/services.php#amenagement" class="service-card fade-in fade-in-delay-2" aria-labelledby="svc-home-amenagement">
                     <div class="service-icon" aria-hidden="true">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
                             <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
                             <polyline points="9 22 9 12 15 12 15 22"/>
                         </svg>
                     </div>
-                    <h3 class="service-title" id="svc-amenagement">Aménagement Intérieur</h3>
+                    <h3 class="service-title" id="svc-home-amenagement">Aménagement intérieur</h3>
                     <p class="service-desc">
-                        Cloisons, plâtrerie, carrelage, peinture et menuiseries intérieures. Nous transformons vos espaces intérieurs selon vos envies et votre budget.
+                        Cuisine, salle de bain, dressing et menuiseries sur mesure. Des espaces pensés pour allier fonctionnalité et esthétique.
                     </p>
-                </article>
-
-                <!-- Gros œuvre -->
-                <article class="service-card fade-in fade-in-delay-1" aria-labelledby="svc-grosoeuvre">
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
+                <!-- Traitement coupe-feu -->
+                <a href="pages/services.php#coupefeu" class="service-card fade-in" aria-labelledby="svc-home-coupefeu">
                     <div class="service-icon" aria-hidden="true">
                         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                            <rect x="2" y="3" width="6" height="4" rx="1"/>
-                            <rect x="9" y="3" width="6" height="4" rx="1"/>
-                            <rect x="16" y="3" width="6" height="4" rx="1"/>
-                            <rect x="2" y="10" width="6" height="4" rx="1"/>
-                            <rect x="9" y="10" width="6" height="4" rx="1"/>
-                            <rect x="16" y="10" width="6" height="4" rx="1"/>
-                            <rect x="2" y="17" width="6" height="4" rx="1"/>
-                            <rect x="9" y="17" width="6" height="4" rx="1"/>
-                            <rect x="16" y="17" width="6" height="4" rx="1"/>
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                         </svg>
                     </div>
-                    <h3 class="service-title" id="svc-grosoeuvre">Gros Œuvre</h3>
+                    <h3 class="service-title" id="svc-home-coupefeu">Traitement coupe-feu</h3>
                     <p class="service-desc">
-                        Fondations, maçonnerie, dalle béton, charpente et toiture. Nos équipes qualifiées assurent la solidité et la pérennité de vos ouvrages.
+                        Calfeutrement de traversées, joints et cloisons coupe-feu certifiés. Mise en conformité avec les réglementations incendie ERP et IGH.
                     </p>
-                </article>
-
-                <!-- Suivi de chantier -->
-                <article class="service-card fade-in fade-in-delay-2" aria-labelledby="svc-suivi">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
-                            <path d="M9 11l3 3L22 4"/>
-                            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-                        </svg>
-                    </div>
-                    <h3 class="service-title" id="svc-suivi">Suivi &amp; Coordination</h3>
-                    <p class="service-desc">
-                        Un interlocuteur unique pour piloter l'ensemble des corps de métier. Transparence totale sur l'avancement du chantier et respect strict du planning.
-                    </p>
-                </article>
+                    <span class="service-card-cta" aria-hidden="true">Voir le service →</span>
+                </a>
             </div>
         </div>
     </section>

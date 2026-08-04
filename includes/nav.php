@@ -3,9 +3,10 @@ $current = basename($_SERVER['PHP_SELF'], '.php');
 $base = (str_contains($_SERVER['PHP_SELF'], '/pages/') || $current === 'realisations') ? '../' : '';
 
 $nav_links = [
-    ['href' => $base . 'index.php',        'label' => 'Accueil',       'key' => 'index'],
-    ['href' => $base . 'realisations.php', 'label' => 'Réalisations',  'key' => 'realisations'],
-    ['href' => $base . 'pages/contact.php','label' => 'Contact',       'key' => 'contact'],
+    ['href' => $base . 'index.php',         'label' => 'Accueil',      'key' => 'index'],
+    ['href' => $base . 'pages/services.php','label' => 'Services',     'key' => 'services'],
+    ['href' => $base . 'realisations.php',  'label' => 'Réalisations', 'key' => 'realisations'],
+    ['href' => $base . 'pages/contact.php', 'label' => 'Contact',      'key' => 'contact'],
 ];
 ?>
 <header class="site-header" role="banner">
