@@ -4,11 +4,13 @@ $titles = [
     'index'        => 'Baldonedo Bâtiment – Construction & Rénovation à Orly',
     'contact'      => 'Contact – Baldonedo Bâtiment',
     'realisations' => 'Nos Réalisations – Baldonedo Bâtiment',
+    'services'     => 'Nos Services – Baldonedo Bâtiment',
 ];
 $descriptions = [
     'index'        => 'Baldonedo Bâtiment, votre expert en construction et rénovation à Orly (94). Devis gratuit, intervention rapide, qualité garantie.',
     'contact'      => 'Contactez Baldonedo Bâtiment pour tous vos projets de construction et rénovation à Orly et en Île-de-France.',
     'realisations' => 'Découvrez les réalisations de Baldonedo Bâtiment : constructions, rénovations et travaux en Île-de-France.',
+    'services'     => 'Rénovation, électricité, plomberie, revêtements de sol, plâtrerie, aménagement intérieur et traitement coupe-feu à Orly et en Île-de-France.',
 ];
 $title       = $titles[$page]       ?? 'Baldonedo Bâtiment';
 $description = $descriptions[$page] ?? 'Construction & Rénovation – Baldonedo Bâtiment, Orly (94)';

@@ -8,11 +8,18 @@
                 <span class="breadcrumb-sep" aria-hidden="true">›</span>
                 <span aria-current="page">Contact</span>
             </nav>
-            <p class="page-hero-eyebrow">Parlons de votre projet</p>
-            <h1 class="page-hero-title" id="contact-hero-title">Contactez-Nous</h1>
-            <p class="page-hero-subtitle">
-                Vous avez un projet de construction ou de rénovation ? Notre équipe vous répond sous 48h et vous propose un devis gratuit et sans engagement.
-            </p>
+            <div class="page-hero-inner">
+                <div>
+                    <p class="page-hero-eyebrow">Parlons de votre projet</p>
+                    <h1 class="page-hero-title" id="contact-hero-title">Contactez-Nous</h1>
+                    <p class="page-hero-subtitle">
+                        Vous avez un projet de construction ou de rénovation ? Notre équipe vous répond sous 48h et vous propose un devis gratuit et sans engagement.
+                    </p>
+                </div>
+                <div class="page-hero-img-wrap">
+                    <img src="../assets/images/demande_devis.jpg" alt="Demande de devis Baldonedo Bâtiment" class="page-hero-img" loading="eager">
+                </div>
+            </div>
         </div>
     </section>
 
