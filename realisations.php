@@ -326,18 +326,24 @@
 }
 
 /* ── Gallery text card ── */
+/* Remove aspect-ratio constraint on all breakpoints so mobile can size to content */
 .gallery-item.gallery-item--fill {
     aspect-ratio: auto;
 }
 .gallery-text-card {
-    position: absolute;
-    inset: 0;
     background: var(--clr-dark);
     padding: clamp(1.5rem, 4vw, 2.5rem);
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    overflow: hidden;
+}
+/* Desktop only: pin card to the grid item so it matches slideshow height */
+@media (min-width: 900px) {
+    .gallery-text-card {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+    }
 }
 .gallery-text-eyebrow {
     font-family: var(--font-heading);
