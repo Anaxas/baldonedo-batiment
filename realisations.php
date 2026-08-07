@@ -38,10 +38,29 @@
 
             <div class="gallery-grid" id="galleryGrid">
 
-                <article class="gallery-item gallery-item--wide fade-in" data-category="construction" aria-label="Villa Orly – Construction neuve">
-                    <div class="gallery-placeholder" role="img" aria-label="Maison individuelle construite à Orly">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                        <span>Photo du projet</span>
+                <article class="gallery-item gallery-item--wide gallery-item--slideshow fade-in" data-category="construction" aria-label="Villa Orly – Construction neuve">
+                    <div class="abri-slideshow" role="region" aria-label="Diaporama – Maison individuelle construite à Orly (12 photos)">
+                        <div class="abri-track">
+                            <img src="assets/images/abri/abri01.jpeg" alt="Villa Orly – photo 1 sur 12"  class="abri-slide" loading="eager">
+                            <img src="assets/images/abri/abri02.jpeg" alt="Villa Orly – photo 2 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri03.jpeg" alt="Villa Orly – photo 3 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri04.jpeg" alt="Villa Orly – photo 4 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri05.jpeg" alt="Villa Orly – photo 5 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri06.jpeg" alt="Villa Orly – photo 6 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri07.jpeg" alt="Villa Orly – photo 7 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri08.jpeg" alt="Villa Orly – photo 8 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri09.jpeg" alt="Villa Orly – photo 9 sur 12"  class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri10.jpeg" alt="Villa Orly – photo 10 sur 12" class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri12.jpeg" alt="Villa Orly – photo 11 sur 12" class="abri-slide" loading="lazy">
+                            <img src="assets/images/abri/abri13.jpeg" alt="Villa Orly – photo 12 sur 12" class="abri-slide" loading="lazy">
+                        </div>
+                        <button class="abri-btn abri-prev" aria-label="Image précédente">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <button class="abri-btn abri-next" aria-label="Image suivante">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                        <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 12</div>
                     </div>
                     <div class="gallery-overlay">
                         <div>
@@ -51,16 +70,25 @@
                     </div>
                 </article>
 
-                <article class="gallery-item fade-in fade-in-delay-1" data-category="renovation" aria-label="Appartement Vitry – Rénovation complète">
-                    <div class="gallery-placeholder" role="img" aria-label="Appartement rénové à Vitry-sur-Seine">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-                        <span>Photo du projet</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Appartement T4 – Rénovation</p>
-                            <p class="gallery-overlay-sub">Rénovation · 2023 · Vitry-sur-Seine (94)</p>
-                        </div>
+                <article class="gallery-item gallery-item--fill fade-in fade-in-delay-1" data-category="renovation" aria-label="Abri de jardin transformé – Vitry-sur-Seine">
+                    <div class="gallery-text-card">
+                        <p class="gallery-text-eyebrow">Réalisation · 2022 · Vitry-sur-Seine (94)</p>
+                        <h3 class="gallery-text-title">D'un abri de jardin à une pièce de vie indépendante</h3>
+                        <div class="gallery-text-divider" aria-hidden="true"></div>
+                        <p class="gallery-text-body">
+                            Nichée au fond d'un jardin privatif à Vitry-sur-Seine, cette ancienne structure en bois de 18&nbsp;m² a été entièrement repensée et reconvertie en pièce de vie autonome, indépendante de l'habitation principale.
+                        </p>
+                        <p class="gallery-text-body">
+                            Les travaux ont inclus la réfection de la charpente et de la couverture, la pose d'une isolation thermique et acoustique performante, la création d'un réseau électrique propre, ainsi que l'installation de menuiseries double vitrage. Les finitions intérieures — peinture, sol stratifié et luminaires encastrés — ont transformé cet abri en un espace lumineux, confortable et polyvalent.
+                        </p>
+                        <ul class="gallery-text-tags" aria-label="Prestations réalisées">
+                            <li>Rénovation</li>
+                            <li>Électricité</li>
+                            <li>Isolation</li>
+                            <li>Menuiseries</li>
+                            <li>Peinture</li>
+                            <li>Revêtements de sol</li>
+                        </ul>
                     </div>
                 </article>
 
@@ -230,6 +258,138 @@
 .gallery-item[data-hidden] {
     display: none;
 }
+
+/* ── Abri slideshow ── */
+.abri-slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: var(--clr-dark);
+}
+.abri-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+    will-change: transform;
+}
+.abri-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.abri-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background: rgba(26,35,50,0.6);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transition: background var(--transition);
+    padding: 0;
+}
+.abri-btn:hover { background: rgba(26,35,50,0.92); }
+.abri-prev { left: 10px; }
+.abri-next { right: 10px; }
+.abri-counter {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(26,35,50,0.6);
+    color: rgba(255,255,255,0.9);
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    padding: 3px 12px;
+    border-radius: 100px;
+    z-index: 20;
+    pointer-events: none;
+    white-space: nowrap;
+}
+/* Overlay stays visible but can't block slideshow button clicks */
+.gallery-item--slideshow .gallery-overlay {
+    pointer-events: none;
+}
+
+/* ── Gallery text card ── */
+.gallery-item.gallery-item--fill {
+    aspect-ratio: auto;
+}
+.gallery-text-card {
+    position: absolute;
+    inset: 0;
+    background: var(--clr-dark);
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.gallery-text-eyebrow {
+    font-family: var(--font-heading);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--clr-primary-light);
+    margin: 0 0 var(--sp-4);
+}
+.gallery-text-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+    font-weight: 700;
+    color: var(--clr-white);
+    line-height: 1.2;
+    margin: 0 0 var(--sp-3);
+}
+.gallery-text-divider {
+    width: 36px;
+    height: 2px;
+    background: var(--clr-primary);
+    border: none;
+    margin: 0 0 var(--sp-4);
+    flex-shrink: 0;
+}
+.gallery-text-body {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.75;
+    margin: 0 0 var(--sp-3);
+}
+.gallery-text-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    list-style: none;
+    padding: 0;
+    margin: auto 0 0;
+}
+.gallery-text-tags li {
+    font-family: var(--font-heading);
+    font-size: 0.55rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--clr-primary-light);
+    background: rgba(90, 174, 192, 0.10);
+    padding: 3px 8px;
+    border-radius: 100px;
+    border: 1px solid rgba(90, 174, 192, 0.22);
+}
 </style>
 
 <script>
@@ -254,6 +414,46 @@
             });
         });
     });
+})();
+
+// Abri slideshow
+(function initAbriSlideshow() {
+    const slideshow = document.querySelector('.abri-slideshow');
+    if (!slideshow) return;
+
+    const track   = slideshow.querySelector('.abri-track');
+    const slides  = slideshow.querySelectorAll('.abri-slide');
+    const counter = slideshow.querySelector('.abri-counter');
+    const prevBtn = slideshow.querySelector('.abri-prev');
+    const nextBtn = slideshow.querySelector('.abri-next');
+    const total   = slides.length;
+    let current   = 0;
+    let timer;
+
+    function goTo(index) {
+        current = (index + total) % total;
+        track.style.transform = `translateX(-${current * 100}%)`;
+        if (counter) counter.textContent = `${current + 1} / ${total}`;
+    }
+
+    function startAuto() { timer = setInterval(() => goTo(current + 1), 4000); }
+    function stopAuto()  { clearInterval(timer); }
+
+    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current - 1); startAuto(); });
+    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current + 1); startAuto(); });
+
+    // Touch swipe
+    let touchStartX = 0;
+    slideshow.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    slideshow.addEventListener('touchend',   (e) => {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(dx) > 40) { stopAuto(); goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
+    }, { passive: true });
+
+    slideshow.addEventListener('mouseenter', stopAuto);
+    slideshow.addEventListener('mouseleave', startAuto);
+
+    startAuto();
 })();
 </script>
 
