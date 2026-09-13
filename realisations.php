@@ -28,121 +28,539 @@
                 </p>
             </div>
 
-            <!-- Filter tags -->
-            <div class="gallery-filters fade-in" style="display:flex; flex-wrap:wrap; gap: var(--sp-3); justify-content:center; margin-bottom: var(--sp-10);">
-                <button class="tag gallery-filter gallery-filter--active" data-filter="all">Tous les projets</button>
-                <button class="tag gallery-filter" data-filter="construction">Construction</button>
-                <button class="tag gallery-filter" data-filter="renovation">Rénovation</button>
-                <button class="tag gallery-filter" data-filter="extension">Extension</button>
-            </div>
+            <div class="realisation-list">
 
-            <div class="gallery-grid" id="galleryGrid">
-
-                <article class="gallery-item gallery-item--wide gallery-item--slideshow fade-in" data-category="construction" aria-label="Villa Orly – Construction neuve">
-                    <div class="abri-slideshow" role="region" aria-label="Diaporama – Maison individuelle construite à Orly (12 photos)">
-                        <div class="abri-track">
-                            <img src="assets/images/abri/abri01.jpeg" alt="Villa Orly – photo 1 sur 12"  class="abri-slide" loading="eager">
-                            <img src="assets/images/abri/abri02.jpeg" alt="Villa Orly – photo 2 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri03.jpeg" alt="Villa Orly – photo 3 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri04.jpeg" alt="Villa Orly – photo 4 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri05.jpeg" alt="Villa Orly – photo 5 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri06.jpeg" alt="Villa Orly – photo 6 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri07.jpeg" alt="Villa Orly – photo 7 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri08.jpeg" alt="Villa Orly – photo 8 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri09.jpeg" alt="Villa Orly – photo 9 sur 12"  class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri10.jpeg" alt="Villa Orly – photo 10 sur 12" class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri12.jpeg" alt="Villa Orly – photo 11 sur 12" class="abri-slide" loading="lazy">
-                            <img src="assets/images/abri/abri13.jpeg" alt="Villa Orly – photo 12 sur 12" class="abri-slide" loading="lazy">
-                        </div>
-                        <button class="abri-btn abri-prev" aria-label="Image précédente">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-                        </button>
-                        <button class="abri-btn abri-next" aria-label="Image suivante">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-                        </button>
-                        <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 12</div>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Villa Orly – Construction neuve</p>
-                            <p class="gallery-overlay-sub">Construction · 2023 · Orly (94)</p>
+                <!-- ─── 1. Abri de jardin – 12 photos | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Maison individuelle construite à Orly (12 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/abri/abri01.jpeg" alt="Villa Orly – photo 1 sur 12"  class="abri-slide" loading="eager">
+                                <img src="assets/images/abri/abri02.jpeg" alt="Villa Orly – photo 2 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri03.jpeg" alt="Villa Orly – photo 3 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri04.jpeg" alt="Villa Orly – photo 4 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri05.jpeg" alt="Villa Orly – photo 5 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri06.jpeg" alt="Villa Orly – photo 6 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri07.jpeg" alt="Villa Orly – photo 7 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri08.jpeg" alt="Villa Orly – photo 8 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri09.jpeg" alt="Villa Orly – photo 9 sur 12"  class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri10.jpeg" alt="Villa Orly – photo 10 sur 12" class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri12.jpeg" alt="Villa Orly – photo 11 sur 12" class="abri-slide" loading="lazy">
+                                <img src="assets/images/abri/abri13.jpeg" alt="Villa Orly – photo 12 sur 12" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 12</div>
                         </div>
                     </div>
-                </article>
-
-                <article class="gallery-item gallery-item--fill fade-in fade-in-delay-1" data-category="renovation" aria-label="Abri de jardin transformé – Vitry-sur-Seine">
-                    <div class="gallery-text-card">
-                        <p class="gallery-text-eyebrow">Réalisation · 2022 · Vitry-sur-Seine (94)</p>
-                        <h3 class="gallery-text-title">D'un abri de jardin à une pièce de vie indépendante</h3>
-                        <div class="gallery-text-divider" aria-hidden="true"></div>
-                        <p class="gallery-text-body">
-                            Nichée au fond d'un jardin privatif à Vitry-sur-Seine, cette ancienne structure en bois de 18&nbsp;m² a été entièrement repensée et reconvertie en pièce de vie autonome, indépendante de l'habitation principale.
-                        </p>
-                        <p class="gallery-text-body">
-                            Les travaux ont inclus la réfection de la charpente et de la couverture, la pose d'une isolation thermique et acoustique performante, la création d'un réseau électrique propre, ainsi que l'installation de menuiseries double vitrage. Les finitions intérieures — peinture, sol stratifié et luminaires encastrés — ont transformé cet abri en un espace lumineux, confortable et polyvalent.
-                        </p>
-                        <ul class="gallery-text-tags" aria-label="Prestations réalisées">
-                            <li>Rénovation</li>
-                            <li>Électricité</li>
-                            <li>Isolation</li>
-                            <li>Menuiseries</li>
-                            <li>Peinture</li>
-                            <li>Revêtements de sol</li>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Construction neuve</p>
+                        <h3 class="gallery-text-title">Villa Orly<br><span class="gallery-text-sub">Abri de jardin</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Construction d'un abri de jardin sur mesure à Orly : fondations, maçonnerie, charpente bois et bardage. Réalisation complète de A à Z, conformément au permis de construire, avec finitions soignées intérieur et extérieur.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Maçonnerie</li>
+                            <li>Charpente</li>
+                            <li>Fondations</li>
+                            <li>Orly (94)</li>
                         </ul>
                     </div>
-                </article>
+                </div>
 
-                <article class="gallery-item fade-in fade-in-delay-2" data-category="extension" aria-label="Extension Maison Thiais">
-                    <div class="gallery-placeholder" role="img" aria-label="Extension d'une maison à Thiais">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-                        <span>Photo du projet</span>
-                    </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Maison – Extension 45 m²</p>
-                            <p class="gallery-overlay-sub">Extension · 2022 · Thiais (94)</p>
+                <!-- ─── 2. Colonnes compteurs – 3 photos | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Remplacement de colonnes compteurs (3 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/compteur-colonne-1.jpeg" alt="Colonnes compteurs – photo 1 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/compteur-colonne-2.jpeg" alt="Colonnes compteurs – photo 2 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/compteur-colonne-3.jpeg" alt="Colonnes compteurs – photo 3 sur 3" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 3</div>
                         </div>
                     </div>
-                </article>
-
-                <article class="gallery-item fade-in" data-category="renovation" aria-label="Commerce Alfortville – Aménagement">
-                    <div class="gallery-placeholder" role="img" aria-label="Local commercial aménagé à Alfortville">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
-                        <span>Photo du projet</span>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Électricité</p>
+                        <h3 class="gallery-text-title">Colonnes compteurs<br><span class="gallery-text-sub">Remplacement et mise aux normes</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Dépose et remplacement de colonnes compteurs vétustes dans un immeuble collectif. Mise aux normes NF C 14-100, gestion des raccordements réseau et remise en conformité complète des installations.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Électricité</li>
+                            <li>Mise aux normes</li>
+                            <li>Collectif</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
                     </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Local commercial – Aménagement</p>
-                            <p class="gallery-overlay-sub">Rénovation · 2022 · Alfortville (94)</p>
+                </div>
+
+                <!-- ─── 3. Pose de cuisine – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/pose-cuisine.jpeg" alt="Pose de cuisine équipée" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Aménagement intérieur</p>
+                        <h3 class="gallery-text-title">Cuisine équipée<br><span class="gallery-text-sub">Installation complète</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Installation complète d'une cuisine équipée : montage des meubles hauts et bas, raccordements plomberie et électricité, pose du plan de travail et des électroménagers encastrés.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Cuisine</li>
+                            <li>Plomberie</li>
+                            <li>Électricité</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 4. Local poubelle – 7 photos | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Construction d'un local poubelle (7 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/local-poubelle-1.jpeg" alt="Local poubelle – photo 1 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-2.jpeg" alt="Local poubelle – photo 2 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-3.jpeg" alt="Local poubelle – photo 3 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-4.jpeg" alt="Local poubelle – photo 4 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-5.jpeg" alt="Local poubelle – photo 5 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-6.jpeg" alt="Local poubelle – photo 6 sur 7" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/local-poubelle-7.jpeg" alt="Local poubelle – photo 7 sur 7" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 7</div>
                         </div>
                     </div>
-                </article>
-
-                <article class="gallery-item gallery-item--wide fade-in fade-in-delay-1" data-category="construction" aria-label="Immeuble Choisy – Construction R+3">
-                    <div class="gallery-placeholder" role="img" aria-label="Immeuble R+3 à Choisy-le-Roi">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
-                        <span>Photo du projet</span>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Construction</p>
+                        <h3 class="gallery-text-title">Local poubelle<br><span class="gallery-text-sub">Immeuble collectif</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Construction d'un local poubelle pour immeuble collectif : dalle béton, maçonnerie en parpaing, toiture, portail et finitions extérieures. Travaux menés en coordination avec le syndic de copropriété.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Maçonnerie</li>
+                            <li>Béton</li>
+                            <li>Construction</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
                     </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Immeuble R+3 – Construction neuve</p>
-                            <p class="gallery-overlay-sub">Construction · 2021 · Choisy-le-Roi (94)</p>
+                </div>
+
+                <!-- ─── 5. Faïence murale – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/pose-faience-mur.jpeg" alt="Pose de faïence murale" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Faïence murale<br><span class="gallery-text-sub">Carrelage intérieur</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Pose de carrelage mural en grès cérame : préparation du support, pose à joints fins avec raccords parfaits aux angles et finitions soignées. Travaux réalisés dans le cadre d'une rénovation complète d'appartement.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Carrelage</li>
+                            <li>Faïence</li>
+                            <li>Intérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 6. Faïence murale décorative – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/pose-faience-murale.jpeg" alt="Faïence murale décorative" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Faïence décorative<br><span class="gallery-text-sub">Grand format contemporain</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Pose de carrelage mural décoratif grand format à motifs contemporains. Découpes précises autour des prises et conduits, joints de dilatation respectés pour un résultat esthétique et durable.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Carrelage</li>
+                            <li>Décoration</li>
+                            <li>Intérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 7. Faïence sol – 1 photo | texte DROITE ─── -->
+                <!-- <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/faience-sol.jpeg" alt="Pose de faïence au sol" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Faïence au sol<br><span class="gallery-text-sub">Revêtement intérieur</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Revêtement de sol en faïence grand format : ragréage du support, calepinage soigné et joints de dilatation périphériques. Résistant à l'humidité, facile d'entretien et esthétiquement irréprochable.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Carrelage</li>
+                            <li>Sol</li>
+                            <li>Intérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <!-- ─── 8. Peinture et finitions – 3 photos | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Travaux de peinture et finitions (3 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/peinture-finitions-1.jpeg" alt="Peinture et finitions – photo 1 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/peinture-finitions-2.jpeg" alt="Peinture et finitions – photo 2 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/peinture-finitions-3.jpeg" alt="Peinture et finitions – photo 3 sur 3" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 3</div>
                         </div>
                     </div>
-                </article>
-
-                <article class="gallery-item fade-in fade-in-delay-2" data-category="renovation" aria-label="Maison Villeneuve – Rénovation façade">
-                    <div class="gallery-placeholder" role="img" aria-label="Rénovation de façade à Villeneuve-le-Roi">
-                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35"><rect x="2" y="3" width="6" height="4" rx="1"/><rect x="9" y="3" width="6" height="4" rx="1"/><rect x="16" y="3" width="6" height="4" rx="1"/><rect x="2" y="10" width="6" height="4" rx="1"/><rect x="9" y="10" width="6" height="4" rx="1"/><rect x="16" y="10" width="6" height="4" rx="1"/></svg>
-                        <span>Photo du projet</span>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Peinture et finitions<br><span class="gallery-text-sub">Appartement rénové</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Travaux de peinture complète d'un appartement : préparation des surfaces, enduit de lissage, application de peinture acrylique mate et finitions sur boiseries et plinthes. Prêt à habiter.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Peinture</li>
+                            <li>Finitions</li>
+                            <li>Enduit</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
                     </div>
-                    <div class="gallery-overlay">
-                        <div>
-                            <p class="gallery-overlay-title">Maison – Rénovation façade &amp; toiture</p>
-                            <p class="gallery-overlay-sub">Rénovation · 2021 · Villeneuve-le-Roi (94)</p>
+                </div>
+
+                <!-- ─── 9. Balcon sol – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/balcon-sol.jpeg" alt="Balcon – Préparation du sol" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Rénovation de balcon<br><span class="gallery-text-sub">Préparation du sol</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Dépose de l'ancien revêtement dégradé, reprise de l'étanchéité, ragréage et préparation du support avant pose du nouveau carrelage extérieur antidérapant. Travaux réalisés sans nuisances pour le voisinage.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Balcon</li>
+                            <li>Étanchéité</li>
+                            <li>Extérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 10. Balcon sol fini – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/balcon-sol-fini.jpeg" alt="Balcon – Sol terminé" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Balcon rénové<br><span class="gallery-text-sub">Finitions carrelage extérieur</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Pose du carrelage extérieur antidérapant sur le balcon rénové : calepinage précis, joints traités à l'époxy, profilés de rive en aluminium. Résultat durable, esthétique et résistant aux intempéries.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Balcon</li>
+                            <li>Carrelage</li>
+                            <li>Extérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 11. Cuisine faïence sol – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/cuisine-faience-sol.jpeg" alt="Cuisine avec faïence au sol" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Cuisine – Faïence au sol<br><span class="gallery-text-sub">Carrelage de cuisine</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Carrelage de sol en cuisine : nettoyage et ragréage du support, pose en diagonale avec joints de couleur assortie. Finitions soignées au pied des meubles et raccords aux plinthes.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Cuisine</li>
+                            <li>Carrelage</li>
+                            <li>Sol</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 12. Cuisine équipée finie – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/cuisine-plan-finie.jpeg" alt="Cuisine équipée sur plan" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Aménagement</p>
+                        <h3 class="gallery-text-title">Cuisine sur mesure<br><span class="gallery-text-sub">Aménagement complet</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Aménagement complet d'une cuisine : pose des placards, plan de travail stratifié, hotte aspirante et appareils encastrés. Coordination plomberie, électricité et menuiserie pour un résultat clé en main.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Cuisine</li>
+                            <li>Aménagement</li>
+                            <li>Intérieur</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 13. Chape béton – 3 photos | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Chape béton (3 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/chape-ciment-1.jpeg" alt="Chape béton – photo 1 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/chape-ciment-2.jpeg" alt="Chape béton – photo 2 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/chape-ciment-3.jpeg" alt="Chape béton – photo 3 sur 3" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 3</div>
                         </div>
                     </div>
-                </article>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Gros œuvre</p>
+                        <h3 class="gallery-text-title">Chape béton<br><span class="gallery-text-sub">Préparation du sol</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Réalisation d'une chape pour la mise à niveau du sol avant pose de revêtement. Préparation du support, pose des guides de nivellement, coulage et talochage. Séchage contrôlé avant passage des corps d'état suivants.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Chape</li>
+                            <li>Béton</li>
+                            <li>Gros œuvre</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 14. Ajout cloison – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/ajout-cloison-montage.jpeg" alt="Ajout de cloison et montage" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Création de cloison<br><span class="gallery-text-sub">Plâtrerie et isolation</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Montage de cloison en plaques de plâtre sur ossature métallique : répartition des montants, isolation phonique intégrée, passage des gaines électriques, bandes et enduit de finition.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Cloison</li>
+                            <li>Plâtrerie</li>
+                            <li>Isolation</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 15. Nouveau compteur – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/nouveau-compteur.jpeg" alt="Installation d'un nouveau compteur" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Électricité</p>
+                        <h3 class="gallery-text-title">Nouveau compteur<br><span class="gallery-text-sub">Mise aux normes électrique</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Dépose de l'ancienne installation, pose d'un nouveau tableau de répartition et raccordement au réseau. Mise aux normes NF C 15-100 avec disjoncteurs différentiels 30 mA. Mise en service vérifiée et certificat de conformité remis.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Électricité</li>
+                            <li>Tableau</li>
+                            <li>Mise aux normes</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 16. Coin cuisine bureau – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/coin-cuisine-bureau.jpeg" alt="Coin cuisine intégré dans un bureau" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Aménagement</p>
+                        <h3 class="gallery-text-title">Coin cuisine<br><span class="gallery-text-sub">Intégration en local professionnel</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Création d'un espace cuisine fonctionnel intégré à un local professionnel : pose de l'évier, raccordements plomberie, mobilier de rangement encastré et revêtement mural carrelé. Solution clé en main.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Cuisine</li>
+                            <li>Aménagement</li>
+                            <li>Professionnel</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 17. Chantier début – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/chantier-debut.jpeg" alt="Début de chantier" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Construction</p>
+                        <h3 class="gallery-text-title">Début de chantier<br><span class="gallery-text-sub">Organisation et préparation</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Phase de préparation d'un chantier : terrassement, implantation des ouvrages, installation sécurisée. Toutes les autorisations administratives et déclarations de travaux sont obtenues avant tout démarrage.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Construction</li>
+                            <li>Terrassement</li>
+                            <li>Gros œuvre</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 18. Chape + parquet – 3 photos | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Chape et pose de parquet (3 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/chape-ciment-parquet-1.jpeg" alt="Chape et parquet – photo 1 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/chape-ciment-parquet-2.jpeg" alt="Chape et parquet – photo 2 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/chape-ciment-parquet-3.jpeg" alt="Chape et parquet – photo 3 sur 3" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 3</div>
+                        </div>
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Chape et parquet<br><span class="gallery-text-sub">Réfection de sol complète</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Réalisation d'une chape de nivellement suivie de la pose d'un parquet flottant stratifié. Sous-couche acoustique, joint de dilatation périphérique et plinthes assorties pour un rendu chaleureux et durable.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Chape</li>
+                            <li>Parquet</li>
+                            <li>Sol</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 19. Déco mur TV (1) – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/deco-murale-tele-1.jpeg" alt="Mur TV – conception et habillage" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Aménagement intérieur</p>
+                        <h3 class="gallery-text-title">Mur TV – Habillage<br><span class="gallery-text-sub">Design contemporain</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Création d'un habillage mural sur mesure pour intégration de TV : niche encastrée, éclairage LED indirect, finitions peinture et boiseries. Design soigné pour un rendu salon contemporain et chaleureux.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Décoration</li>
+                            <li>Habillage mural</li>
+                            <li>LED</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 20. Déco mur TV (2) – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/deco-murale-tele-2.jpeg" alt="Mur TV – finitions et pose" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Aménagement intérieur</p>
+                        <h3 class="gallery-text-title">Mur TV – Finitions<br><span class="gallery-text-sub">Pose et câblage discret</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Fixation murale sécurisée de la TV, passage de câbles dissimulés dans les moulures, raccords peinture parfaits. Résultat propre et épuré : aucun câble apparent, installation prête à l'usage.</p>
+                        <ul class="gallery-text-tags">
+                            <li>TV murale</li>
+                            <li>Finitions</li>
+                            <li>Câblage</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 21. Parquet (1) – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/parquet-1.jpeg" alt="Pose de parquet – première phase" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Pose de parquet<br><span class="gallery-text-sub">Première phase</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Pose d'un parquet massif cloué sur lambourdes : calepinage de la pièce, disposition des lames dans le sens de la lumière naturelle. Première phase de clouage avant ponçage et vitrification.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Parquet</li>
+                            <li>Bois massif</li>
+                            <li>Sol</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 22. Parquet (2) – 1 photo | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/parquet-2.jpeg" alt="Pose de parquet – finitions" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Parquet – Finitions<br><span class="gallery-text-sub">Ponçage et vitrification</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Ponçage mécanique du parquet posé, vitrification en trois couches croisées, pose des plinthes et quarts-de-rond assortis. Rendu brillant et chaleureux, résistant au trafic quotidien.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Parquet</li>
+                            <li>Vitrification</li>
+                            <li>Finitions</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 23. Salle de bain complète – 1 photo | texte DROITE ─── -->
+                <div class="realisation-entry fade-in">
+                    <div class="realisation-media">
+                        <img src="assets/images/realisations/pose-faience-mur-sol-lavabo.jpeg" alt="Salle de bain – faïence mur, sol et lavabo" class="realisation-img" loading="lazy">
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Rénovation</p>
+                        <h3 class="gallery-text-title">Salle de bain<br><span class="gallery-text-sub">Rénovation complète</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Réfection complète d'une salle de bain : faïence murale, carrelage de sol, installation du lavabo encastré avec robinetterie. Joints époxy pour une durabilité maximale, résultat propre et moderne.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Salle de bain</li>
+                            <li>Carrelage</li>
+                            <li>Plomberie</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- ─── 24. Toiture local poubelle – 3 photos | texte GAUCHE ─── -->
+                <div class="realisation-entry realisation-entry--reverse fade-in">
+                    <div class="realisation-media">
+                        <div class="abri-slideshow" role="region" aria-label="Diaporama – Toiture local poubelle (3 photos)">
+                            <div class="abri-track">
+                                <img src="assets/images/realisations/toit-local-poubelle.jpeg"        alt="Toiture local poubelle – photo 1 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/toit-local-poubelle-1.jpeg"      alt="Toiture local poubelle – photo 2 sur 3" class="abri-slide" loading="lazy">
+                                <img src="assets/images/realisations/toit-local-poubelle-rebord.jpeg" alt="Toiture local poubelle – photo 3 sur 3" class="abri-slide" loading="lazy">
+                            </div>
+                            <button class="abri-btn abri-prev" aria-label="Image précédente"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg></button>
+                            <button class="abri-btn abri-next" aria-label="Image suivante"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></button>
+                            <div class="abri-counter" aria-live="polite" aria-atomic="true">1 / 3</div>
+                        </div>
+                    </div>
+                    <div class="realisation-text">
+                        <p class="gallery-text-eyebrow">Construction</p>
+                        <h3 class="gallery-text-title">Toiture locale poubelle<br><span class="gallery-text-sub">Charpente et étanchéité</span></h3>
+                        <div class="gallery-text-divider"></div>
+                        <p class="gallery-text-body">Réalisation de la toiture du local poubelle : charpente bois, isolation, pare-vapeur et étanchéité bitumineuse avec relevés. Gouttières PVC et descentes pluviales raccordées au réseau existant.</p>
+                        <ul class="gallery-text-tags">
+                            <li>Toiture</li>
+                            <li>Charpente</li>
+                            <li>Étanchéité</li>
+                            <li>Val-de-Marne (94)</li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -237,29 +655,7 @@
     </section>
 
 <style>
-/* Gallery filter styles */
-.gallery-filter {
-    cursor: pointer;
-    border: 1.5px solid var(--clr-border);
-    background: var(--clr-white);
-    color: var(--clr-mid);
-    font-size: 0.875rem;
-    padding: 0.4em 1.1em;
-    border-radius: 100px;
-    transition: background var(--transition), color var(--transition), border-color var(--transition);
-}
-.gallery-filter:hover,
-.gallery-filter--active {
-    background: var(--clr-primary);
-    color: var(--clr-white);
-    border-color: var(--clr-primary);
-}
-
-.gallery-item[data-hidden] {
-    display: none;
-}
-
-/* ── Abri slideshow ── */
+/* ── Slideshow ── */
 .abri-slideshow {
     position: relative;
     width: 100%;
@@ -320,146 +716,163 @@
     pointer-events: none;
     white-space: nowrap;
 }
-/* Overlay stays visible but can't block slideshow button clicks */
-.gallery-item--slideshow .gallery-overlay {
-    pointer-events: none;
-}
 
-/* ── Gallery text card ── */
-/* Remove aspect-ratio constraint on all breakpoints so mobile can size to content */
-.gallery-item.gallery-item--fill {
-    aspect-ratio: auto;
-}
-.gallery-text-card {
-    background: var(--clr-dark);
-    padding: clamp(1.5rem, 4vw, 2.5rem);
+/* ── Réalisations list layout ── */
+.realisation-list {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    gap: var(--sp-16);
+    margin-top: var(--sp-12);
 }
-/* Desktop only: pin card to the grid item so it matches slideshow height */
+
+.realisation-entry {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-6);
+}
+
+.realisation-media {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--clr-dark);
+    position: relative;
+}
+
+.realisation-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* ── Réalisation text card ── */
+.realisation-text {
+    background: var(--clr-dark);
+    border-radius: var(--radius-md);
+    padding: var(--sp-8) var(--sp-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+}
+
 @media (min-width: 900px) {
-    .gallery-text-card {
-        position: absolute;
-        inset: 0;
-        overflow: hidden;
+    .realisation-entry {
+        flex-direction: row;
+        align-items: stretch;
+        gap: var(--sp-8);
+    }
+    .realisation-entry--reverse {
+        flex-direction: row-reverse;
+    }
+    .realisation-media {
+        flex: 0 0 57%;
+        aspect-ratio: auto;
+        min-height: 360px;
+    }
+    .realisation-text {
+        flex: 1;
+        justify-content: center;
     }
 }
+
+/* ── Text card typography ── */
 .gallery-text-eyebrow {
     font-family: var(--font-heading);
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.75rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--clr-primary-light);
-    margin: 0 0 var(--sp-4);
+    color: var(--clr-primary);
+    margin: 0;
 }
+
 .gallery-text-title {
     font-family: var(--font-heading);
-    font-size: clamp(1.1rem, 2.2vw, 1.5rem);
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     color: var(--clr-white);
-    line-height: 1.2;
-    margin: 0 0 var(--sp-3);
+    line-height: 1.25;
+    margin: 0;
 }
+
+.gallery-text-sub {
+    font-size: 1rem;
+    color: var(--clr-primary-light);
+    font-weight: 400;
+}
+
 .gallery-text-divider {
-    width: 36px;
-    height: 2px;
+    width: 40px;
+    height: 3px;
     background: var(--clr-primary);
-    border: none;
-    margin: 0 0 var(--sp-4);
-    flex-shrink: 0;
+    border-radius: 2px;
 }
+
 .gallery-text-body {
-    font-size: 0.875rem;
-    color: rgba(255, 255, 255, 0.72);
-    line-height: 1.75;
-    margin: 0 0 var(--sp-3);
+    font-size: 0.9375rem;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.7;
+    margin: 0;
 }
+
 .gallery-text-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
     list-style: none;
     padding: 0;
-    margin: auto 0 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
 }
+
 .gallery-text-tags li {
-    font-family: var(--font-heading);
-    font-size: 0.55rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-size: 0.72rem;
     color: var(--clr-primary-light);
-    background: rgba(90, 174, 192, 0.10);
-    padding: 3px 8px;
+    border: 1px solid rgba(94,174,192,0.35);
     border-radius: 100px;
-    border: 1px solid rgba(90, 174, 192, 0.22);
+    padding: 0.2em 0.75em;
+    letter-spacing: 0.04em;
 }
 </style>
 
 <script>
-// Gallery filter
-(function() {
-    const filters = document.querySelectorAll('.gallery-filter');
-    const items   = document.querySelectorAll('.gallery-item[data-category]');
-    if (!filters.length) return;
+// Slideshows – initialise every .abri-slideshow on the page independently
+(function initSlideshows() {
+    document.querySelectorAll('.abri-slideshow').forEach(function(slideshow) {
+        const track   = slideshow.querySelector('.abri-track');
+        const slides  = slideshow.querySelectorAll('.abri-slide');
+        const counter = slideshow.querySelector('.abri-counter');
+        const prevBtn = slideshow.querySelector('.abri-prev');
+        const nextBtn = slideshow.querySelector('.abri-next');
+        const total   = slides.length;
+        if (!track || total === 0) return;
+        let current = 0;
+        let timer;
 
-    filters.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filters.forEach(b => b.classList.remove('gallery-filter--active'));
-            btn.classList.add('gallery-filter--active');
+        function goTo(index) {
+            current = (index + total) % total;
+            track.style.transform = `translateX(-${current * 100}%)`;
+            if (counter) counter.textContent = `${current + 1} / ${total}`;
+        }
 
-            const selected = btn.dataset.filter;
-            items.forEach(item => {
-                if (selected === 'all' || item.dataset.category === selected) {
-                    delete item.dataset.hidden;
-                } else {
-                    item.dataset.hidden = '';
-                }
-            });
-        });
+        function startAuto() { timer = setInterval(() => goTo(current + 1), 4000); }
+        function stopAuto()  { clearInterval(timer); }
+
+        prevBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current - 1); startAuto(); });
+        nextBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current + 1); startAuto(); });
+
+        let touchStartX = 0;
+        slideshow.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+        slideshow.addEventListener('touchend',   (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            if (Math.abs(dx) > 40) { stopAuto(); goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
+        }, { passive: true });
+
+        slideshow.addEventListener('mouseenter', stopAuto);
+        slideshow.addEventListener('mouseleave', startAuto);
+
+        startAuto();
     });
-})();
-
-// Abri slideshow
-(function initAbriSlideshow() {
-    const slideshow = document.querySelector('.abri-slideshow');
-    if (!slideshow) return;
-
-    const track   = slideshow.querySelector('.abri-track');
-    const slides  = slideshow.querySelectorAll('.abri-slide');
-    const counter = slideshow.querySelector('.abri-counter');
-    const prevBtn = slideshow.querySelector('.abri-prev');
-    const nextBtn = slideshow.querySelector('.abri-next');
-    const total   = slides.length;
-    let current   = 0;
-    let timer;
-
-    function goTo(index) {
-        current = (index + total) % total;
-        track.style.transform = `translateX(-${current * 100}%)`;
-        if (counter) counter.textContent = `${current + 1} / ${total}`;
-    }
-
-    function startAuto() { timer = setInterval(() => goTo(current + 1), 4000); }
-    function stopAuto()  { clearInterval(timer); }
-
-    prevBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current - 1); startAuto(); });
-    nextBtn.addEventListener('click', (e) => { e.stopPropagation(); stopAuto(); goTo(current + 1); startAuto(); });
-
-    // Touch swipe
-    let touchStartX = 0;
-    slideshow.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
-    slideshow.addEventListener('touchend',   (e) => {
-        const dx = e.changedTouches[0].clientX - touchStartX;
-        if (Math.abs(dx) > 40) { stopAuto(); goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
-    }, { passive: true });
-
-    slideshow.addEventListener('mouseenter', stopAuto);
-    slideshow.addEventListener('mouseleave', startAuto);
-
-    startAuto();
 })();
 </script>
 
