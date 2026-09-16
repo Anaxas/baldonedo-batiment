@@ -40,9 +40,20 @@
                 </div>
             </div>
 
-            <!-- Hero image -->
+            <!-- Hero video -->
             <div class="page-hero-img-wrap" style="position:relative;z-index:1;">
-                <img src="assets/images/team.jpg" alt="L'équipe Baldonedo Bâtiment" class="page-hero-img" loading="eager">
+                <video class="page-hero-img" id="heroVideo"
+                       autoplay muted playsinline preload="auto"
+                       aria-label="Chantier de construction – Baldonedo Bâtiment">
+                    <source src="assets/video/chantier.mp4" type="video/mp4">
+                </video>
+                <button class="hero-video-replay" id="heroReplay" aria-label="Revoir la vidéo" hidden>
+                    <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                        <polyline points="1 4 1 10 7 10"/>
+                        <path d="M3.51 15a9 9 0 1 0 .49-4.63"/>
+                    </svg>
+                    <span>Revoir</span>
+                </button>
             </div>
 
             </div><!-- /.hero-inner -->
@@ -295,5 +306,60 @@
             </div>
         </div>
     </section>
+
+<style>
+/* ── Hero video replay button ── */
+.hero-video-replay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(26,35,50,0.28);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    z-index: 10;
+}
+.hero-video-replay:hover {
+    background: rgba(26,35,50,0.38);
+}
+.hero-video-replay svg {
+    filter: drop-shadow(0 2px 10px rgba(0,0,0,0.5));
+}
+.hero-video-replay:hover svg {
+    transform: rotate(-20deg) scale(1.1);
+}
+.hero-video-replay[hidden] { display: none; }
+.hero-video-replay span {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+</style>
+
+<script>
+(function () {
+    const video  = document.getElementById('heroVideo');
+    const replay = document.getElementById('heroReplay');
+    if (!video || !replay) return;
+
+    video.addEventListener('ended', () => {
+        replay.hidden = false;
+    });
+
+    replay.addEventListener('click', () => {
+        replay.hidden = true;
+        video.currentTime = 0;
+        video.play();
+    });
+})();
+</script>
 
 <?php include 'includes/footer.php'; ?>
